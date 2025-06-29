@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+html,body{
+    background-color: #1b1a1c;
+    color: white;
+}
+h1{
+    @apply text-4xl
+}
+.background_image{
+    @apply bg-[url("/pictures/bgbg.png")] bg-fixed bg-repeat-x absolute inset-0 opacity-20 pointer-events-none
+}
+.viewport{
+    height:40px;
+    overflow: hidden;
+    display: inline-block;
+    transition:all cubic-bezier(0.71, 0.03, 0.34, 1)
+
+}
+.animation_container{
+    display: flex;
+    flex-direction: column;
+    animation: animatedWords 21s infinite cubic-bezier(0.09, 0.01, 0.3, 0.99);
+}
+@keyframes animatedWords {
+    0% {
+        transform: translateY(0.5%);
+    }
+    12.5% {
+        transform: translateY(-12.5%);
+    }
+    25% {
+        transform: translateY(-25%);
+    }
+    37.5% {
+        transform: translateY(-37.5%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    62.5% {
+        transform: translateY(-62.5%);
+    }
+    75% {
+        transform: translateY(-75%);
+    }
+    87.5% {
+        transform: translateY(-87.5%);
+    }
+}
+.grid_container{
+    margin: auto;
+    width:40%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.grid_container div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #111;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #111;
+}
