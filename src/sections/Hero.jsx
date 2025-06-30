@@ -6,9 +6,9 @@ import CountUp from "react-countup";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col gap-10 ">
+    <section className="flex flex-col gap-5 md:gap-155 sm:gap-130 lg:gap-10 2xl:gap-30  ">
       <div className="background_image" />
-      <div className="flex flex-row gap-3 items-center h-full relative pt-30 w-[80%] mx-auto min-h-[500px]">
+      <div className="flex flex-col lg:flex-row gap-3 items-center h-full relative pt-30 w-[80%] mx-auto min-h-[500px]">
         <header className="flex flex-col gap-5">
           <div className="flex flex-col gap-5">
             <h1 className="flex flex-row gap-3">
@@ -40,15 +40,13 @@ const Hero = () => {
           </div>
           <AnimatedButton text="View My Work" id="counter" />
         </header>
-        <figure>
-          <div className="xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-0 top-24 xl:-right-20 right-0 ">
-            <Hearo3DModel />
-          </div>
-        </figure>
+        <div className="hidden sm:block xl:w-[70%] w-full h-full min-h-[50vh] absolute top-100 xl:-top-0 xl:-right-20 right-0 ">
+          <Hearo3DModel />
+        </div>
       </div>
-      <div className="grid_container">
+      <div className="grid_container" id="counter">
         {counterItems.map((item) => (
-          <div>
+          <div className="">
             <span className="text-2xl">
               <CountUp
                 start={0}

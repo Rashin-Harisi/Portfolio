@@ -3,6 +3,7 @@
 html,body{
     background-color: #1b1a1c;
     color: white;
+    padding: 0 20px;
 }
 h1{
     @apply text-4xl
@@ -49,11 +50,7 @@ h1{
     }
 }
 .grid_container{
-    margin: auto;
-    width:40%;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
+    @apply mx-auto w-full lg:w-[40%] grid grid-rows-2 lg:grid-cols-2 gap-5
 }
 .grid_container div{
     display: flex;

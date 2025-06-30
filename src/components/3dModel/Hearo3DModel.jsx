@@ -10,7 +10,7 @@ const Hearo3DModel = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
   return (
-    <div className="relative xl:top-20 top-24 xl:-right-30 right-0 w-[80%] h-[80%] min-h-[50vh] bg-[#111] rounded-3xl">
+    <div className="relative xl:top-20 top-24 xl:-right-30 right-0  w-full h-full md:w-[80%] md:h-[80%] min-h-[50vh] lg:bg-[#111] rounded-3xl">
       <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
         <ambientLight intensity={0.5} color="#aeaef2" />
         <OrbitControls
@@ -24,7 +24,7 @@ const Hearo3DModel = () => {
         <Lights />
         <Particles count={100} />
         <group
-          scale={isMobile ? 0.2 : 0.35}
+          scale={isMobile ? 0.28 : 0.35}
           position={[0, -3.0, 0]}
           rotation={[0, -Math.PI / 6, 0]}
         >
