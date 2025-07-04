@@ -3,47 +3,62 @@ import { counterItems, words } from "../constants/index.jsx";
 import React from "react";
 import AnimatedButton from "../components/AnimatedButton/AnimatedButton.jsx";
 import CountUp from "react-countup";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".hero_title h1",
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" },
+    );
+  });
   return (
-    <section className="flex flex-col gap-5 md:gap-155 sm:gap-130 lg:gap-10 2xl:gap-30  ">
+    <section className="mt-25 w-[95%] mx-auto px-[20px]">
       <div className="background_image" />
-      <div className="flex flex-col lg:flex-row gap-3 items-center h-full relative pt-30 w-[80%] mx-auto min-h-[500px]">
-        <header className="flex flex-col gap-5">
+
+      <header className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col gap-6 p-5">
           <div className="flex flex-col gap-5">
-            <h1 className="flex flex-row gap-3">
-              Shaping
-              <span className="viewport">
-                <span className="animation_container">
-                  {words.map((word) => (
-                    <span
-                      key={word.text}
-                      className="flex items-center gap-1 md:gap-3 pb-2 text-white"
-                    >
-                      <img
-                        src={word.imgPath}
-                        alt={`icon_${word.text}`}
-                        className="xl:size-9 md:size-7 size-5 md:p-2 p-1 rounded-full bg-white"
-                      />
-                      <span>{word.text}</span>
-                    </span>
-                  ))}
+            <div className="hero_title">
+              <h1 className="flex flex-row gap-3">
+                Shaping
+                <span className="viewport">
+                  <span className="animation_container">
+                    {words.map((word) => (
+                      <span
+                        key={word.text}
+                        className="flex items-center gap-1 md:gap-3 pb-2 text-white"
+                      >
+                        <img
+                          src={word.imgPath}
+                          alt={`icon_${word.text}`}
+                          className="xl:size-9 md:size-7 size-5 md:p-2 p-1 rounded-full bg-white"
+                        />
+                        <span>{word.text}</span>
+                      </span>
+                    ))}
+                  </span>
                 </span>
-              </span>
-            </h1>
-            <h1>into Real Projects</h1>
-            <h1>that Deliver Results</h1>
+              </h1>
+              <h1>into Real Projects</h1>
+              <h1>that Deliver Results</h1>
+            </div>
             <p>
               Hi, I’m Rashin, a developer based in Vienna with a passion for
               code.
             </p>
           </div>
           <AnimatedButton text="View My Work" id="counter" />
-        </header>
-        <div className="hidden sm:block xl:w-[70%] w-full h-full min-h-[50vh] absolute top-100 xl:-top-0 xl:-right-20 right-0 ">
-          <Hearo3DModel />
         </div>
-      </div>
+        <div className="min-h-[400px] flex-1">
+          <figure>
+            <Hearo3DModel />
+          </figure>
+        </div>
+      </header>
+
       <div className="grid_container" id="counter">
         {counterItems.map((item) => (
           <div className="">
