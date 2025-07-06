@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
           <AnimatedButton text="View My Work" id="counter" />
         </div>
-        <div className="min-h-[400px] flex-1">
+        <div className="min-h-[600px] flex-1">
           <figure>
             <Hearo3DModel />
           </figure>

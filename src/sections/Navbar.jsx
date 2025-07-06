@@ -3,7 +3,7 @@ import { navLinks } from "../constants/index.jsx";
 
 const Navbar = () => {
   return (
-    <nav className="px-[20px] flex flex-row items-center justify-between h-[60px] md:px-5 mt-1 fixed top-0 left-8 right-8  backdrop-blur-md bg-[#1D1C22] rounded-xl z-10">
+    <nav className="px-[20px] flex flex-row items-center justify-between h-[60px] md:px-5 mt-1 fixed top-0 left-8 right-8  backdrop-blur-md bg-[#1D1C22] rounded-xl z-60">
       <p className="font-semibold text-xl">Rashin Harisi</p>
       <div className="hidden lg:flex flex-row gap-3 w-[30%] justify-between text-[#D9ECFF] ">
         {navLinks.map((link) => (

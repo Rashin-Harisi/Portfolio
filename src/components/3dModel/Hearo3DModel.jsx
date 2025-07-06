@@ -9,7 +9,7 @@ const Hearo3DModel = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
   return (
-    <div className=" w-full h-[50vh] bg-[#111] rounded-3xl">
+    <div className=" w-full h-[70vh]">
       <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
         <ambientLight intensity={0.5} color="#aeaef2" />
         <OrbitControls
