@@ -3,7 +3,7 @@ import { abilities } from "../constants/index.jsx";
 
 const FeatureSection = () => {
   return (
-    <section className="w-[90%] mx-auto my-3">
+    <section className="w-[90%] mx-auto mt-20">
       <div className="grid grid-rows-1 md:grid-cols-3 gap-5">
         {abilities.map((ability) => (
           <div

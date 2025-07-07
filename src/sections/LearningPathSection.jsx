@@ -7,8 +7,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const ExperienceSection = () => {
+//Need to be updated with my reality
+const LearningPathSection = () => {
   useGSAP(() => {
     gsap.utils.toArray(".timeline-card").forEach((card) => {
       gsap.from(card, {
@@ -51,7 +51,7 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 my-20 px-5 md:px-10 xl:px-0"
+      className="flex-center md:mt-40 mt-10 px-5 md:px-10 xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
         {/*//main inner container*/}
@@ -112,4 +112,4 @@ const ExperienceSection = () => {
     </section>
   );
 };
-export default ExperienceSection;
+export default LearningPathSection;

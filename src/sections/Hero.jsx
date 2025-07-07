@@ -1,4 +1,4 @@
-import Hearo3DModel from "../components/3dModel/Hearo3DModel.jsx";
+import Hearo3DModel from "../components/3dModel/Hero-section/Hearo3DModel.jsx";
 import { counterItems, words } from "../constants/index.jsx";
 import React from "react";
 import AnimatedButton from "../components/AnimatedButton/AnimatedButton.jsx";
