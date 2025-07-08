@@ -17,9 +17,7 @@ const App = () => {
       <FeatureSection />
       <ExperienceSection />
       <TechSkillSection />
-      {/*Need to be updated
       <LearningPathSection />
-      */}
       <Contact />
       <Footer />
     </>

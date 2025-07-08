@@ -15,7 +15,7 @@ const Hero = () => {
     );
   });
   return (
-    <section className="mt-25 w-[95%] mx-auto px-[20px]">
+    <section id="hero" className="mt-25 w-[95%] mx-auto px-[20px]">
       <div className="background_image" />
 
       <header className="flex flex-col lg:flex-row gap-5">

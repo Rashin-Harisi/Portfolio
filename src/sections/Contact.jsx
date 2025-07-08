@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-[90%] mx-auto mt-20">
+    <section className="w-[90%] mx-auto mt-20" id="contact">
       <TitleBox
         sub="💬 Have questions or ideas? Let’s talk! 🚀"
         title="Get in Touch – Let’s Connect"

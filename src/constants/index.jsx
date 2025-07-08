@@ -12,8 +12,8 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Education",
+    link: "#education",
   },
 ];
 
@@ -33,42 +33,6 @@ const counterItems = [
   { value: 25, suffix: "+", label: "Completed Projects" },
 ];
 
-const logoIconsList = [
-  {
-    imgPath: "/pictures/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/pictures/logos/company-logo-11.png",
-  },
-];
-
 const abilities = [
   {
     imgPath: "/pictures/seo.png",
@@ -84,29 +48,6 @@ const abilities = [
     imgPath: "/pictures/time.png",
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
-];
-
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
   },
 ];
 
@@ -185,63 +126,66 @@ const expCards = [
   },
 ];
 
-const expLogos = [
+const learningPath = [
   {
-    name: "logo1",
-    imgPath: "/pictures/logo1.png",
+    name: "Master of Science",
+    institute: "Islamic Azad University of Iran ",
+    year: "09/2013 – 11/2015",
   },
   {
-    name: "logo2",
-    imgPath: "/pictures/logo2.png",
+    name: "HTML and CSS",
+    institute: "Faradars institute",
+    year: "04/2016 – 06/2016",
   },
   {
-    name: "logo3",
-    imgPath: "/pictures/logo3.png",
-  },
-];
-
-const testimonials = [
-  {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+    name: "JavaScript",
+    institute: "Maktabkhone institute",
+    year: "07/2016 – 11/2016",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+    name: "Network+",
+    institute: "Faradars institute",
+    year: "08/2018 – 09/2018",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+    name: "ICND1",
+    institute: "Faradars institute",
+    year: "09/2019 – 12/2019 ",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+    name: "ICND2",
+    institute: "Faradars institute ",
+    year: "01/2020 – 03/2020 ",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+    name: "React and Redux",
+    institute: "Botostart institute ",
+    year: "08/2021 – 12/2021",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+    name: "Docker",
+    institute: "Maktabkhone institute",
+    year: "04/2022 – 05/2022 ",
+  },
+  {
+    name: "TypeScript",
+    institute: "Botostart institute ",
+    year: "05/2023 – 07/2023 ",
+  },
+  {
+    name: "Nextjs",
+    institute: "Botostart institute",
+    year: "01/2024 – 03/2024",
+  },
+  {
+    name: "Electronjs",
+    institute: "Sabzlearn institute",
+    year: "11/2024 – 12/2024",
+  },
+  {
+    name: "Nodejs and Express",
+    institute: "Botostart institute",
+    year: "01/2025 – 03/2025 ",
   },
 ];
 
@@ -249,35 +193,32 @@ const socialImgs = [
   {
     name: "insta",
     url: "https://www.instagram.com/",
-    imgPath: "/images/insta.png",
+    imgPath: "/pictures/insta.png",
   },
   {
     name: "fb",
     url: "https://www.facebook.com/",
-    imgPath: "/images/fb.png",
+    imgPath: "/pictures/fb.png",
   },
   {
     name: "x",
     url: "https://www.x.com/",
-    imgPath: "/images/x.png",
+    imgPath: "/pictures/x.png",
   },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/",
-    imgPath: "/images/linkedin.png",
+    imgPath: "/pictures/linkedin.png",
   },
 ];
 
 export {
   words,
   abilities,
-  logoIconsList,
   counterItems,
   expCards,
-  expLogos,
-  testimonials,
+  learningPath,
   socialImgs,
   techStackIcons,
-  techStackImgs,
   navLinks,
 };

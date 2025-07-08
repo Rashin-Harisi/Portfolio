@@ -5,7 +5,7 @@ import Tech3DModel from "../components/3dModel/Tech-section/Tech3DModel.jsx";
 
 const TechSkillSection = () => {
   return (
-    <section id="skills" className="w-[90%] mx-auto my-20">
+    <section id="skills" className="w-[90%] mx-auto my-40">
       <div>
         <TitleBox
           title="How I Can Contribute & My Key Skills"
