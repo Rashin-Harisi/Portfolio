@@ -54,25 +54,25 @@ const abilities = [
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/Models/react_logo-transformed.glb",
+    imgPath: "/pictures/logos/react.png",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    modelPath: "/Models/node-transformed.glb",
+    imgPath: "/pictures/logos/node.png",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: "/Models/three.js-transformed.glb",
+    imgPath: "/pictures/logos/three.png",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "Version Control",
-    modelPath: "/Models/git-svg-transformed.glb",
+    imgPath: "/pictures/logos/git.svg",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },

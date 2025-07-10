@@ -9,6 +9,7 @@ const Demo = () => {
         autoPlay
         muted
         loop
+        preload="none"
         playsInline
         className="w-[80%] mx-auto rounded-xl shadow-lg"
       >

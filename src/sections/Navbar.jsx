@@ -3,7 +3,7 @@ import { navLinks } from "../constants/index.jsx";
 
 const Navbar = () => {
   return (
-    <nav className="px-[20px] flex flex-row items-center justify-between h-[60px] md:px-5 mt-1 fixed top-0 left-8 right-8  backdrop-blur-md bg-[#1D1C22] rounded-xl z-60">
+    <nav className="w-[95%]  mx-auto px-[20px] flex flex-row items-center justify-between h-[60px] md:px-5 mt-1 fixed top-0 left-8 right-8  backdrop-blur-md bg-[#1D1C22] rounded-xl z-60">
       <a href={"#hero"} className="font-semibold text-xl">
         Rashin Harisi
       </a>

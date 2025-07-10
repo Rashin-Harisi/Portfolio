@@ -2,10 +2,12 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useMediaQuery } from "react-responsive";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Showcase = () => {
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
   const sectionRef = useRef(null);
   const project1Ref = useRef(null);
   const project2Ref = useRef(null);
@@ -42,15 +44,18 @@ const Showcase = () => {
   return (
     <section
       id="work"
-      className="px-[20px] flex flex-col lg:flex-row gap-2 lg:gap-5 w-[95%] mx-auto mt-5 md:-mt-20 mb-5"
+      className="px-[20px] flex flex-col lg:flex-row gap-2 lg:gap-10 w-[88%] mx-auto mt-5 md:-mt-20 mb-5"
       ref={sectionRef}
     >
+      {/* grid */}
       <div ref={project1Ref}>
-        <div className=" border rounded-xl">
+        <div
+          className={`${isBigScreen && "bg-gradient-to-t from-[#000000] to-[#1f1e99]"} rounded-xl`}
+        >
           <img
             src="/pictures/Car-Hub.jpeg"
             alt="project1"
-            className="w-full m-auto h-full lg:h-170 object-fill rounded-xl"
+            className="lg:h-160 object-contain rounded-2xl size-[85%] m-auto"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -70,7 +75,7 @@ const Showcase = () => {
             <img
               src="/pictures/Blog.jpeg"
               alt="project2"
-              className="w-[90%] mx-auto lg:h-85 object-fill"
+              className="w-[90%] mx-auto lg:h-80 object-fill"
             />
           </div>
           <p className="break-words whitespace-normal md:text-xl lg:text-2xl font-semibold">
@@ -82,7 +87,7 @@ const Showcase = () => {
             <img
               src="/pictures/Healthcare.jpeg"
               alt="project3"
-              className="w-[90%] mx-auto lg:h-85 object-cover"
+              className="w-[90%] mx-auto lg:h-80 object-cover"
             />
           </div>
           <p className="break-words whitespace-normal md:text-xl lg:text-2xl font-semibold">

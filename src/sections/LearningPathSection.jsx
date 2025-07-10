@@ -25,7 +25,7 @@ const LearningPathSection = () => {
   return (
     <section
       id="education"
-      className="flex-center md:mt-40 mt-10 px-5 md:px-10 xl:px-0 overflow-hidden"
+      className="flex-center md:mt-40 mt-10 px-5 md:px-10 xl:px-0 overflow-hidden w-[90%] mx-auto"
     >
       <div className="w-full h-full lg:px-20">
         <div className="px-5">
