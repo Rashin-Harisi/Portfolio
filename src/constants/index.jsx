@@ -35,19 +35,19 @@ const counterItems = [
 
 const abilities = [
   {
-    imgPath: "/pictures/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
-  },
-  {
-    imgPath: "/pictures/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
-  },
-  {
     imgPath: "/pictures/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Timely & Reliable",
+    desc: "Delivering high-quality projects on time with consistent communication throughout.",
+  },
+  {
+    imgPath: "/pictures/people.png",
+    title: "Team-Oriented Mindset",
+    desc: "Enjoys collaborating, learning, and contributing effectively in team environments.",
+  },
+  {
+    imgPath: "/pictures/learning.png",
+    title: "Always Learning",
+    desc: "Driven by curiosity and constantly exploring new tools and technologies.",
   },
 ];
 
@@ -56,12 +56,6 @@ const techStackIcons = [
     name: "React Developer",
     modelPath: "/Models/react_logo-transformed.glb",
     scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Python Developer",
-    modelPath: "/Models/python-transformed.glb",
-    scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
@@ -77,7 +71,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Version Control",
     modelPath: "/Models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -87,41 +81,27 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/pictures/exp1.png",
-    logoPath: "/pictures/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+      "Rashin is a reliable and talented front-end developer. Always delivers high-quality work on time, communicates clearly, and is a pleasure to work with. Highly recommended!",
+    logoPath: "/pictures/company.png",
+    title: "Frontend Web Developer",
+    date: "2018-2022",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed and maintained company websites, admin dashboards, and internal portals using React",
+      "Reviewed and refactored code to fix bugs, improve performance, and ensure stability.",
+      "Implemented secure authentication, authorization, and RESTful APIs for departmental tools.",
+      "Managed virtual servers and cloud hosting environments.",
     ],
   },
   {
     review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/pictures/exp2.png",
-    logoPath: "/pictures/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+      "Rashin made a strong impression during the internship—curious, dependable, and eager to grow. Brought great energy to the team and handled tasks with professionalism.",
+    logoPath: "/pictures/company.png",
+    title: "Internship - Web Developer",
+    date: "2017-2018",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/pictures/exp3.png",
-    logoPath: "/pictures/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built and updated static pages using HTML, CSS, and JavaScript.",
+      "Developed responsive navigation menus.",
+      "Improved user experience with smooth animations and transitions.",
     ],
   },
 ];
@@ -191,23 +171,13 @@ const learningPath = [
 
 const socialImgs = [
   {
-    name: "insta",
-    url: "https://www.instagram.com/",
-    imgPath: "/pictures/insta.png",
-  },
-  {
-    name: "fb",
-    url: "https://www.facebook.com/",
-    imgPath: "/pictures/fb.png",
-  },
-  {
-    name: "x",
-    url: "https://www.x.com/",
-    imgPath: "/pictures/x.png",
+    name: "git",
+    url: "https://github.com/Rashin-Harisi",
+    imgPath: "/pictures/github.png",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/rashin-harisi/",
     imgPath: "/pictures/linkedin.png",
   },
 ];

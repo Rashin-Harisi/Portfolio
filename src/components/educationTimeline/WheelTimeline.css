@@ -16,7 +16,7 @@
     .cards-container {
         --base-rotation: 0deg;
         --full-circle: 360deg;
-        --radius: 40vw;
+        --radius: 30vw;
         --duration: 200ms;
 
         --cards-container-size: calc(var(--radius) * 2);

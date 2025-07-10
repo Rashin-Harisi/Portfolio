@@ -4,11 +4,24 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WheelTimeline from "../components/educationTimeline/WheelTimeline.jsx";
 import { useMediaQuery } from "react-responsive";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 //Need to be updated with my reality
 const LearningPathSection = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
+  useGSAP(() => {
+    gsap.from(".map", {
+      opacity: 0,
+      xPercent: 0,
+      duration: 1,
+      ease: "power2.inOut",
+      scrollTrigger: {
+        trigger: "#education",
+        start: "top 60%",
+      },
+    });
+  }, []);
   return (
     <section
       id="education"
@@ -18,11 +31,13 @@ const LearningPathSection = () => {
         <div className="px-5">
           <TitleBox title="Education and Training" sub="📚 My Learning Path" />
         </div>
-        <div className="relative rounded-2xl  mt-10 min-h-[600px] md:min-h-[500px] lg:min-h-[600px] has-dot-background">
+        <div
+          className={`relative rounded-2xl  mt-10  xl:min-h-[800px] md:min-h-[500px] lg:min-h-[600px] ${!isMobile && "has-dot-background"}`}
+        >
           {!isMobile ? (
             <WheelTimeline />
           ) : (
-            <div className="rounded-2xl">
+            <div className="map rounded-2xl">
               <img
                 src="/pictures/timeline.png"
                 alt="timeline"

@@ -10,7 +10,7 @@ const FeatureSection = () => {
             className="flex flex-col gap-2 bg-[#0E0E10] rounded-xl px-5 py-5"
             key={ability.title}
           >
-            <img src={ability.imgPath} alt="ability" className="w-10 h-10" />
+            <img src={ability.imgPath} alt="ability" className="w-9 h-9" />
             <h3>{ability.title}</h3>
             <p className="break-words whitespace-normal">{ability.desc}</p>
           </div>

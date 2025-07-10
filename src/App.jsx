@@ -7,6 +7,7 @@ import TechSkillSection from "./sections/TechSkillSection.jsx";
 import LearningPathSection from "./sections/LearningPathSection.jsx";
 import Contact from "./sections/Contact.jsx";
 import Footer from "./sections/Footer.jsx";
+import Demo from "./sections/Demo.jsx";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <TechSkillSection />
       <LearningPathSection />
       <Contact />
+      <Demo />
       <Footer />
     </>
   );

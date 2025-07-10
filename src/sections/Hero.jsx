@@ -26,9 +26,9 @@ const Hero = () => {
                 Shaping
                 <span className="viewport">
                   <span className="animation_container">
-                    {words.map((word) => (
+                    {words.map((word, index) => (
                       <span
-                        key={word.text}
+                        key={index}
                         className="flex items-center gap-1 md:gap-3 pb-2 text-white"
                       >
                         <img
@@ -60,8 +60,8 @@ const Hero = () => {
       </header>
 
       <div className="grid_container" id="counter">
-        {counterItems.map((item) => (
-          <div className="">
+        {counterItems.map((item, index) => (
+          <div key={index} className="">
             <span className="text-2xl">
               <CountUp
                 start={0}

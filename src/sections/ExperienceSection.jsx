@@ -69,9 +69,7 @@ const ExperienceSection = () => {
                 key={card.title}
               >
                 <div className="xl:w-2/6">
-                  <ShiningCard card={card} index={index}>
-                    <img src={card.imgPath} alt="Compony_logo" />
-                  </ShiningCard>
+                  <ShiningCard card={card} index={index} />
                 </div>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">

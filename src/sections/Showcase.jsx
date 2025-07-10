@@ -46,21 +46,21 @@ const Showcase = () => {
       ref={sectionRef}
     >
       <div ref={project1Ref}>
-        <div className="">
+        <div className=" border rounded-xl">
           <img
-            src="/pictures/project1.png"
+            src="/pictures/Car-Hub.jpeg"
             alt="project1"
-            className="w-full m-auto h-full lg:h-170 object-cover"
+            className="w-full m-auto h-full lg:h-170 object-fill rounded-xl"
           />
         </div>
         <div className="flex flex-col gap-2">
           <p className="break-words whitespace-normal md:text-4xl font-semibold">
-            On-Demand Rides Made Simple with a Powerful, User-Friendly App
-            called Ryde
+            On-Demand cars Made Simple with a Powerful, User-Friendly App called
+            Car-Hub
           </p>
           <p className="text-[#D9ECFF] text-lg">
-            An app built with React Native, Expo, & TailwindCSS for a fast,
-            user-friendly experience.
+            An app built with Nextjs-14, Redux, MongoDB, TypeScript& TailwindCSS
+            for a fast, user-friendly experience.
           </p>
         </div>
       </div>
@@ -68,25 +68,25 @@ const Showcase = () => {
         <div ref={project2Ref}>
           <div className="bg-[#FFEFDB] rounded-xl">
             <img
-              src="/pictures/project2.png"
+              src="/pictures/Blog.jpeg"
               alt="project2"
-              className="w-[90%] mx-auto lg:h-85 object-cover"
+              className="w-[90%] mx-auto lg:h-85 object-fill"
             />
           </div>
           <p className="break-words whitespace-normal md:text-xl lg:text-2xl font-semibold">
-            The Library Management Platform
+            An app built in React to publish blogs
           </p>
         </div>
         <div ref={project3Ref}>
           <div className="bg-[#FFE7EB] rounded-xl ">
             <img
-              src="/pictures/project3.png"
+              src="/pictures/Healthcare.jpeg"
               alt="project3"
               className="w-[90%] mx-auto lg:h-85 object-cover"
             />
           </div>
           <p className="break-words whitespace-normal md:text-xl lg:text-2xl font-semibold">
-            YC Directory - A Startup Showcase App
+            A desktop app to manage appointments
           </p>
         </div>
       </div>

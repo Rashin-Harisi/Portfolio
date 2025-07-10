@@ -12,7 +12,7 @@ const WheelTimeline = () => {
               type="radio"
               id={`item-${index}`}
               name="gallery-item"
-              defaultChecked={index === 11}
+              defaultChecked={index === 0}
             />
             <label htmlFor={`item-${index}`}>
               {item.year} {/* use start year for label */}

@@ -3,7 +3,7 @@ import { socialImgs } from "../constants/index.jsx";
 
 const Footer = () => {
   return (
-    <footer className="w-[90%] mx-auto mt-20 flex items-center justify-between min-h-[100px]">
+    <footer className="w-[90%] mx-auto mt-20 flex flex-col md:flex-row items-center justify-around md:justify-between min-h-[100px]">
       <div className="flex gap-5">
         {socialImgs.map((item) => (
           <div
